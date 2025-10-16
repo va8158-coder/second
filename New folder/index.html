@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibrant Todo — Manage your tasks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1 class="title">Vibrant Todo</h1>
+      <p class="subtitle">A colourful, fast and friendly todo app</p>
+    </header>
+
+    <section class="new-task">
+      <input id="taskInput" type="text" placeholder="Add a new task and press Enter" />
+      <button id="addBtn" class="btn primary">Add</button>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+      <div class="actions">
+        <button id="clearCompleted" class="btn">Clear completed</button>
+        <div class="stats">0 tasks</div>
+      </div>
+    </section>
+
+    <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+    <footer class="footer">Built with ❤️ — Save lives (or at least tasks) in localStorage</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
